@@ -4,6 +4,7 @@ Represents a round of the game, storing things like word, time, skips, drawing p
 
 import time as t
 from _thread import *
+from player import Player
 from .game import Game
 from .chat import Chat
 
@@ -19,7 +20,7 @@ class Round(object):
         self.player_drawing = player_drawing
         self.player_guesses = []
         self.skips = 0
-        self.player_scores = {player:0 for player in players}
+        self.player_scores = {player:0 for player in Player}
         self.time = 75
         self.chat = Chat(self)
         start_new_thread(self.time_thread, ())

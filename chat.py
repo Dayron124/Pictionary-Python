@@ -2,7 +2,7 @@
 Prepresents and stores information about the chat
 """
 
-from round import Round
+from round import Round as r 
 
 class Chat(object):
     def __init__(self):
