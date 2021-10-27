@@ -2,7 +2,7 @@
 Stores the state of the drawing board
 """
 
-from _typeshed import Self
+from _typeshed import self
 
 class Board(object):
     ROWS = COLS =720
@@ -11,7 +11,7 @@ class Board(object):
         self.data = self._create_empty_board()
         
     def update(x, y, color):
-        Self.data[y][x] = color
+        self.data[y][x] = color
         
     def clear(self):
         self.data = self._create_empty_board()
